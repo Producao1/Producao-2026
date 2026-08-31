@@ -1,92 +1,101 @@
 const products = [
   {
     id: 1,
-    name: 'Velocity Run',
-    category: 'Running',
-    filter: 'running',
-    color: '#ff8a5b',
-    price: 489.9,
-    description: 'Leve, responsivo e pensado para quem valoriza performance e conforto.',
-    tag: 'Mais Vendido',
+    name: 'Milano Tote',
+    category: 'Tote',
+    filter: 'tote',
+    color: '#c9a080',
+    price: 399.9,
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&h=500&fit=crop',
+    description: 'Elegante e funcional, ideal para transportar com sofisticação todos os seus acessórios diários.',
+    tag: 'Mais Vendida',
   },
   {
     id: 2,
-    name: 'City Step',
-    category: 'Casual',
-    filter: 'casual',
+    name: 'Parisian Clutch',
+    category: 'Clutch',
+    filter: 'clutch',
     color: '#d4a574',
-    price: 349.9,
-    description: 'Estilo urbano com amortecimento para o dia inteiro sem perder a leveza.',
+    price: 289.9,
+    image: 'https://images.unsplash.com/photo-1548127083-a63b1c3c3b2f?w=500&h=500&fit=crop',
+    description: 'Perfeita para noites especiais. Minimalista e sofisticada, com fechamento elegante.',
     tag: 'Nova',
   },
   {
     id: 3,
-    name: 'Street Flex',
-    category: 'Street',
-    filter: 'street',
+    name: 'Urban Crossbody',
+    category: 'Crossbody',
+    filter: 'crossbody',
     color: '#8b7a6c',
-    price: 379.9,
-    description: 'Conforto de alto desempenho com uma pegada moderna e versátil.',
+    price: 349.9,
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop',
+    description: 'Confortável para o dia a dia, com alça regulável e compartimentos bem distribuídos.',
     tag: 'Premium',
   },
   {
     id: 4,
-    name: 'Night Luxe',
-    category: 'Premium',
-    filter: 'premium',
+    name: 'Luxe Evening',
+    category: 'Clutch',
+    filter: 'clutch',
     color: '#c9897e',
-    price: 429.9,
-    description: 'Elegância intensa para sair à noite com presença e sofisticação.',
+    price: 449.9,
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&h=500&fit=crop',
+    description: 'Elegância intensa para sair à noite com presença e sofisticação incomparável.',
     tag: 'Luxo',
   },
   {
     id: 5,
-    name: 'Executive Move',
-    category: 'Executivo',
-    filter: 'premium',
+    name: 'Executive Satchel',
+    category: 'Tote',
+    filter: 'tote',
     color: '#8b6f47',
     price: 459.9,
-    description: 'Detalhes refinados e acabamento premium para o profissional moderno.',
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&h=500&fit=crop',
+    description: 'Detalhes refinados e acabamento premium para a profissional moderna e exigente.',
     tag: 'Premium+',
   },
   {
     id: 6,
-    name: 'Apex Court',
-    category: 'Esportivo',
-    filter: 'esportivo',
+    name: 'Travel Backpack',
+    category: 'Mochila',
+    filter: 'mochila',
     color: '#4a3a2e',
     price: 549.9,
-    description: 'Silhueta esportiva com estrutura firme, conforto respirável e visual impactante.',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop',
+    description: 'Espaçosa e elegante, perfeita para viagens com estilo e funcionalidade impecável.',
     tag: 'Edição Limitada',
   },
   {
     id: 7,
-    name: 'Bloom Walk',
-    category: 'Casual',
-    filter: 'casual',
+    name: 'Casual Crossbody',
+    category: 'Crossbody',
+    filter: 'crossbody',
     color: '#c4a47d',
-    price: 419.9,
+    price: 319.9,
+    image: 'https://images.unsplash.com/photo-1548127083-a63b1c3c3b2f?w=500&h=500&fit=crop',
     description: 'Design clean e confortável para transformar qualquer passeio em estilo.',
     tag: 'Popular',
   },
   {
     id: 8,
-    name: 'Elite Pulse',
-    category: 'Esportivo',
-    filter: 'esportivo',
+    name: 'Petite Mini Bag',
+    category: 'Mini Bags',
+    filter: 'mini',
     color: '#d9b77f',
-    price: 499.9,
-    description: 'Impacto visual e tecnologia de conforto para treinos e rotina ativa.',
-    tag: 'Gala',
+    price: 199.9,
+    image: 'https://images.unsplash.com/photo-1548127083-a63b1c3c3b2f?w=500&h=500&fit=crop',
+    description: 'Compacta e charmosa, perfeita para quem valoriza acessórios delicados e sofisticados.',
+    tag: 'Bestseller',
   },
   {
     id: 9,
-    name: 'Daily Motion',
-    category: 'Casual',
-    filter: 'casual',
+    name: 'Daily Elegance',
+    category: 'Tote',
+    filter: 'tote',
     color: '#a0826d',
-    price: 359.9,
-    description: 'A escolha certeira para o dia a dia com leveza, estilo e sustentação.',
+    price: 379.9,
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&h=500&fit=crop',
+    description: 'A escolha certeira para o dia a dia com leveza, estilo e sustentação garantida.',
     tag: 'Bestseller',
   },
 ];
@@ -129,7 +138,7 @@ function renderProducts() {
       (product) => `
         <article class="product-card">
           <div class="product-image">
-            <div class="product-shoe" style="--product-color:${product.color};"></div>
+            <img src="${product.image}" alt="${product.name}" class="product-photo" />
           </div>
           <div class="product-body">
             <div class="product-meta">
@@ -207,7 +216,7 @@ function renderCart() {
       .map(
         (item) => `
           <div class="cart-item">
-            <div class="cart-thumb" style="--item-color:${item.color};"><div class="mini-shoe"></div></div>
+            <img src="${item.image}" alt="${item.name}" class="cart-thumb-img" />
             <div>
               <h4>${item.name}</h4>
               <p>${item.category}</p>
@@ -277,7 +286,7 @@ function updatePaymentMethod(method) {
   if (method === 'pix') {
     refs.paymentDetail.innerHTML = `
       <div class="pix-box">
-        <p>Chave Pix: <strong>vanta@conta.com.br</strong></p>
+        <p>Chave Pix: <strong>bolsaskj@premium.com.br</strong></p>
         <small>Escaneie ou copie a chave para concluir o pagamento.</small>
       </div>
     `;

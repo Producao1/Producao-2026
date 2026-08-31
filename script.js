@@ -6,6 +6,7 @@ const products = [
     filter: 'tote',
     color: '#c9a080',
     price: 399.9,
+    image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&h=500&fit=crop',
     description: 'Elegante e funcional, ideal para transportar com sofisticação todos os seus acessórios diários.',
     tag: 'Mais Vendida',
   },
@@ -16,6 +17,7 @@ const products = [
     filter: 'clutch',
     color: '#d4a574',
     price: 289.9,
+    image: 'https://images.unsplash.com/photo-1548127083-a63b1c3c3b2f?w=500&h=500&fit=crop',
     description: 'Perfeita para noites especiais. Minimalista e sofisticada, com fechamento elegante.',
     tag: 'Nova',
   },
@@ -26,6 +28,7 @@ const products = [
     filter: 'crossbody',
     color: '#8b7a6c',
     price: 349.9,
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop',
     description: 'Confortável para o dia a dia, com alça regulável e compartimentos bem distribuídos.',
     tag: 'Premium',
   },
@@ -36,6 +39,7 @@ const products = [
     filter: 'clutch',
     color: '#c9897e',
     price: 449.9,
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&h=500&fit=crop',
     description: 'Elegância intensa para sair à noite com presença e sofisticação incomparável.',
     tag: 'Luxo',
   },
@@ -46,6 +50,7 @@ const products = [
     filter: 'tote',
     color: '#8b6f47',
     price: 459.9,
+    image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&h=500&fit=crop',
     description: 'Detalhes refinados e acabamento premium para a profissional moderna e exigente.',
     tag: 'Premium+',
   },
@@ -56,6 +61,7 @@ const products = [
     filter: 'mochila',
     color: '#4a3a2e',
     price: 549.9,
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&h=500&fit=crop',
     description: 'Espaçosa e elegante, perfeita para viagens com estilo e funcionalidade impecável.',
     tag: 'Edição Limitada',
   },
@@ -66,6 +72,7 @@ const products = [
     filter: 'crossbody',
     color: '#c4a47d',
     price: 319.9,
+    image: 'https://images.unsplash.com/photo-1548127083-a63b1c3c3b2f?w=500&h=500&fit=crop',
     description: 'Design clean e confortável para transformar qualquer passeio em estilo.',
     tag: 'Popular',
   },
@@ -76,6 +83,7 @@ const products = [
     filter: 'mini',
     color: '#d9b77f',
     price: 199.9,
+    image: 'https://images.unsplash.com/photo-1548127083-a63b1c3c3b2f?w=500&h=500&fit=crop',
     description: 'Compacta e charmosa, perfeita para quem valoriza acessórios delicados e sofisticados.',
     tag: 'Bestseller',
   },
@@ -86,6 +94,7 @@ const products = [
     filter: 'tote',
     color: '#a0826d',
     price: 379.9,
+    image: 'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=500&h=500&fit=crop',
     description: 'A escolha certeira para o dia a dia com leveza, estilo e sustentação garantida.',
     tag: 'Bestseller',
   },
@@ -129,7 +138,7 @@ function renderProducts() {
       (product) => `
         <article class="product-card">
           <div class="product-image">
-            <div class="product-shoe" style="--product-color:${product.color};"></div>
+            <img src="${product.image}" alt="${product.name}" class="product-photo" />
           </div>
           <div class="product-body">
             <div class="product-meta">
@@ -207,7 +216,7 @@ function renderCart() {
       .map(
         (item) => `
           <div class="cart-item">
-            <div class="cart-thumb" style="--item-color:${item.color};"><div class="mini-shoe"></div></div>
+            <img src="${item.image}" alt="${item.name}" class="cart-thumb-img" />
             <div>
               <h4>${item.name}</h4>
               <p>${item.category}</p>
