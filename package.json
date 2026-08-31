@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "mkdir -p .vercel/output/static && cp index.html .vercel/output/static/ && cp styles.css .vercel/output/static/ && cp script.js .vercel/output/static/ && if [ -d public ]; then cp -R public/. .vercel/output/static/; fi",
+    "build": "mkdir -p public .vercel/output/static && cp index.html public/ && cp styles.css public/ && cp script.js public/ && cp -R public/. .vercel/output/static/",
     "start": "python3 -m http.server 3000"
   }
 }
