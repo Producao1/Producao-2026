@@ -1,15 +1,17 @@
 :root {
-  --bg: #f5f2ee;
-  --panel: #fffaf5;
+  --bg: #f3f4f6;
+  --panel: #ffffff;
   --card: #ffffff;
-  --dark: #121212;
-  --dark-alt: #1a1a1a;
-  --muted: #6f6c68;
-  --line: rgba(20, 20, 20, 0.08);
-  --accent: #d88a3b;
-  --accent-soft: #fce7d0;
-  --success: #0d9a6c;
-  --shadow: 0 22px 60px rgba(18, 18, 18, 0.12);
+  --dark: #111827;
+  --dark-alt: #0b0f17;
+  --muted: #5f6673;
+  --line: rgba(17, 24, 39, 0.08);
+  --accent: #ff6b2c;
+  --accent-strong: #ff3d2e;
+  --accent-soft: #ffe2d0;
+  --success: #1abf7a;
+  --shadow: 0 24px 60px rgba(17, 24, 39, 0.14);
+  --sport-glow: rgba(255, 107, 44, 0.18);
 }
 
 * {
@@ -72,7 +74,7 @@ p {
   top: 0;
   z-index: 20;
   backdrop-filter: blur(18px);
-  background: rgba(245, 242, 238, 0.74);
+  background: rgba(243, 244, 246, 0.82);
   border-bottom: 1px solid var(--line);
 }
 
@@ -96,10 +98,11 @@ p {
   height: 30px;
   display: grid;
   place-items: center;
-  background: linear-gradient(135deg, #141414, #343434);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
   color: white;
   border-radius: 8px;
   font-size: 0.9rem;
+  box-shadow: 0 8px 22px rgba(255, 107, 44, 0.35);
 }
 
 .main-nav {
@@ -169,10 +172,11 @@ p {
   width: 54px;
   height: 54px;
   border: 1px solid var(--line);
-  background: var(--dark);
+  background: linear-gradient(135deg, var(--dark) 0%, #1a2433 100%);
   color: #fff;
   border-radius: 50%;
   cursor: pointer;
+  box-shadow: 0 12px 30px rgba(17, 24, 39, 0.18);
 }
 
 .cart-count {
@@ -236,14 +240,14 @@ p {
 }
 
 .primary-btn {
-  background: var(--dark);
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-strong) 100%);
   color: #fff;
-  box-shadow: var(--shadow);
+  box-shadow: 0 18px 42px rgba(255, 107, 44, 0.35);
 }
 
 .secondary-btn {
-  background: transparent;
-  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.7);
+  border-color: rgba(17, 24, 39, 0.08);
   color: var(--dark);
 }
 
@@ -284,10 +288,10 @@ p {
   position: relative;
   width: min(560px, 100%);
   min-height: 440px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), rgba(224, 224, 224, 0.7));
-  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, #141922 0%, #1f2937 38%, #0b0f17 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 40px;
-  box-shadow: 0 32px 60px rgba(17, 17, 17, 0.14);
+  box-shadow: 0 32px 60px rgba(17, 17, 17, 0.22);
   overflow: hidden;
 }
 
@@ -295,7 +299,7 @@ p {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 30% 20%, rgba(216, 138, 59, 0.35), transparent 34%);
+  background: radial-gradient(circle at 30% 20%, var(--sport-glow), transparent 34%);
 }
 
 .shoe-badge {
@@ -496,7 +500,7 @@ p {
 }
 
 .product-tag {
-  background: var(--accent-soft);
+  background: linear-gradient(135deg, rgba(255, 107, 44, 0.12), rgba(255, 61, 46, 0.2));
   color: var(--dark);
   border-radius: 999px;
   padding: 8px 12px;
@@ -543,9 +547,10 @@ p {
   grid-template-columns: 1.08fr 0.92fr;
   align-items: center;
   border-radius: 36px;
-  background: linear-gradient(120deg, #171717 0%, #2b2b2b 55%, #0d0d0d 100%);
+  background: linear-gradient(120deg, #101827 0%, #1f2937 40%, #111827 100%);
   color: #fff;
   overflow: hidden;
+  box-shadow: 0 20px 50px rgba(17, 24, 39, 0.18);
 }
 
 .feature-copy {
@@ -582,7 +587,7 @@ p {
 .feature-visual {
   min-height: 380px;
   position: relative;
-  background: radial-gradient(circle at 52% 18%, rgba(216, 138, 59, 0.45), transparent 30%), linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
+  background: radial-gradient(circle at 52% 18%, rgba(255, 107, 44, 0.42), transparent 30%), linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0));
 }
 
 .mini-card {
@@ -633,7 +638,7 @@ p {
   border-radius: 14px;
   display: grid;
   place-items: center;
-  background: var(--accent-soft);
+  background: linear-gradient(135deg, rgba(255, 107, 44, 0.14), rgba(255, 61, 46, 0.2));
   color: var(--dark);
   font-weight: 800;
   margin-bottom: 18px;
@@ -946,7 +951,7 @@ input[type="text"]:focus {
 }
 
 .site-footer {
-  background: #111;
+  background: linear-gradient(135deg, #0d121b 0%, #101827 100%);
   color: rgba(255,255,255,0.8);
   padding: 34px 0;
 }
