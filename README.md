@@ -1,11 +1,21 @@
-# VANTA - Loja de Tênis Masculinos
+# SoleMente — Calçados Premium
 
-Site estático para uma loja de tênis masculinos com:
-- catálogo de produtos
-- carrinho de compras
-- checkout com pagamento por Pix, cartão de crédito e débito
-- visual premium e responsivo
-- pronto para hospedagem em Vercel
+Site de e-commerce premium para uma loja de calçados femininos sofisticados e elegantes com:
+- Catálogo de sapatos com múltiplas categorias
+- Sistema de filtros por tipo de produto
+- Carrinho de compras funcional
+- Checkout com múltiplas formas de pagamento (Pix, cartão de crédito e débito)
+- Design premium e responsivo
+- Pronto para hospedagem em Vercel
+
+## Características
+
+- **Design Sofisticado**: Interface elegante com paleta de cores premium
+- **Catálogo Diverso**: 9 modelos diferentes com descrições detalhadas
+- **Sistema de Filtros**: Organização por categoria (Running, Casual, Street, Premium, Esportivo)
+- **Carrinho Completo**: Adicionar, remover e gerenciar quantidade
+- **Checkout Seguro**: Múltiplas opções de pagamento com validação
+- **Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
 
 ## Como rodar localmente
 
