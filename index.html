@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loja de tênis masculinos com carrinho, checkout e pagamentos por Pix, cartão de crédito e débito."
+    />
+    <title>VANTA | Tênis Masculinos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">V</span>
+          <span>VANTA</span>
+        </div>
+        <nav class="main-nav" aria-label="Menu principal">
+          <a href="#catalogo">Coleções</a>
+          <a href="#destaques">Destaques</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#avaliacoes">Avaliações</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="icon-button" aria-label="Buscar">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10.5 3a7.5 7.5 0 015.88 12.8l4.42 4.42 1.41-1.41-4.42-4.42A7.5 7.5 0 1010.5 3zm0 2a5.5 5.5 0 110 11 5.5 5.5 0 010-11z"/></svg>
+          </button>
+          <button class="cart-button" id="cartButton" aria-label="Abrir carrinho">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18a2 2 0 110 4 2 2 0 010-4zm10 0a2 2 0 110 4 2 2 0 010-4zM7.2 15h10.7a2 2 0 001.96-1.56l1.7-7.14A1 1 0 0020.59 5H6.4L5.9 2.5A1 1 0 004.92 2H2v2h2.12l2.34 9.9L8 16h10v2H8l-.8-3.1z"/></svg>
+            <span class="cart-count" id="cartCount">0</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow">Performance para o dia a dia</p>
+            <h1>Movimento premium para cada passo.</h1>
+            <p class="lead">
+              Coleções premium com conforto, leveza e visual urbano para homens que querem andar com presença.
+            </p>
+            <div class="hero-actions">
+              <a href="#catalogo" class="primary-btn">Comprar agora</a>
+              <a href="#destaques" class="secondary-btn">Ver destaques</a>
+            </div>
+            <ul class="stats" aria-label="Estatísticas da loja">
+              <li><strong>12k+</strong><span>Clientes ativos</span></li>
+              <li><strong>4.9/5</strong><span>Avaliação geral</span></li>
+              <li><strong>48h</strong><span>Entrega rápida</span></li>
+            </ul>
+          </div>
+          <div class="hero-art" aria-label="Imagem principal do produto">
+            <div class="shoe-card glow-card">
+              <div class="shoe-badge">Novo</div>
+              <div class="shoe-figure">
+                <div class="shoe-shadow"></div>
+                <div class="shoe-body">
+                  <span class="shoe-swoosh"></span>
+                  <span class="shoe-laces"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="brands-bar">
+        <div class="container brands-wrap">
+          <span>VANTA</span>
+          <span>URBAN</span>
+          <span>GRIP</span>
+          <span>RUNLAB</span>
+          <span>ELEV8</span>
+        </div>
+      </section>
+
+      <section id="catalogo" class="catalog section-space">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Coleção masculina</p>
+              <h2>Os favoritos da temporada</h2>
+            </div>
+            <a href="#checkout" class="text-link">Ver carrinho</a>
+          </div>
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section id="destaques" class="feature-banner section-space">
+        <div class="container feature-wrap">
+          <div class="feature-copy">
+            <p class="eyebrow">Tecnologia que sente</p>
+            <h2>Conforto de corrida com estilo urbano.</h2>
+            <p>
+              Soluções de amortecimento, suporte médio e materiais respiráveis pensados para performance no trabalho, na academia e no cotidiano.
+            </p>
+            <ul>
+              <li>Amortecimento responsivo</li>
+              <li>Entressola macia</li>
+              <li>Mesh respirável</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="mini-card large-card">
+              <span>VANTA X1</span>
+              <strong>R$ 459,90</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="beneficios" class="services section-space">
+        <div class="container services-grid">
+          <article>
+            <div class="icon-box">01</div>
+            <h3>Frete rápido</h3>
+            <p>Entrega em até 48 horas para regiões selecionadas.</p>
+          </article>
+          <article>
+            <div class="icon-box">02</div>
+            <h3>Pagamento seguro</h3>
+            <p>Pix, cartão de crédito e débito com fluxo pronto para integração.</p>
+          </article>
+          <article>
+            <div class="icon-box">03</div>
+            <h3>Troca fácil</h3>
+            <p>Primeiros 30 dias com devolução simples e sem burocracia.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="avaliacoes" class="reviews section-space">
+        <div class="container">
+          <div class="section-heading single">
+            <p class="eyebrow">Avaliações</p>
+            <h2>O que nossos clientes dizem</h2>
+          </div>
+          <div class="review-grid">
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>“Conforto incrível e visual muito elegante. Virou o meu favorito para o dia a dia.”</p>
+              <strong>Pedro M.</strong>
+            </article>
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>“Entrega rápida, material premium e o pagamento foi bem simples. Recomendo muito.”</p>
+              <strong>Lucas S.</strong>
+            </article>
+            <article>
+              <div class="stars">★★★★★</div>
+              <p>“A qualidade vale cada centavo. O visual é clean e o suporte do calcanhar é excelente.”</p>
+              <strong>Rafael T.</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+      <div class="cart-header">
+        <h3>Seu carrinho</h3>
+        <button class="close-cart" id="closeCart" aria-label="Fechar carrinho">×</button>
+      </div>
+      <div class="cart-items" id="cartItems"></div>
+      <div class="cart-footer">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <strong id="subtotalValue">R$ 0,00</strong>
+        </div>
+        <button class="primary-btn full-width" id="goToCheckout">Ir para pagamento</button>
+      </div>
+    </aside>
+
+    <section class="checkout-panel" id="checkout" aria-label="Checkout para pagamento">
+      <div class="checkout-wrap">
+        <div class="checkout-summary">
+          <p class="eyebrow">Resumo do pedido</p>
+          <h3>Seu pedido</h3>
+          <div class="summary-list" id="checkoutSummary"></div>
+          <div class="summary-total">
+            <span>Total</span>
+            <strong id="checkoutTotal">R$ 0,00</strong>
+          </div>
+        </div>
+
+        <div class="payment-box">
+          <p class="eyebrow">Pagamento</p>
+          <h3>Escolha sua forma de pagamento</h3>
+
+          <div class="payment-options" id="paymentOptions">
+            <label class="payment-option selected">
+              <input type="radio" name="paymentMethod" value="pix" checked />
+              <span>Pix</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="credit" />
+              <span>Cartão de crédito</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="paymentMethod" value="debit" />
+              <span>Cartão de débito</span>
+            </label>
+          </div>
+
+          <div class="payment-detail" id="paymentDetail">
+            <div class="pix-box">
+              <p>Chave Pix: <strong>vanta@conta.com.br</strong></p>
+              <small>Escaneie ou copie a chave para concluir o pagamento.</small>
+            </div>
+          </div>
+
+          <div class="checkout-form">
+            <div class="field-group" id="cardFields" hidden>
+              <input type="text" placeholder="Número do cartão" aria-label="Número do cartão" />
+              <div class="field-inline">
+                <input type="text" placeholder="MM/AA" aria-label="Validade" />
+                <input type="text" placeholder="CVV" aria-label="CVV" />
+              </div>
+              <input type="text" placeholder="Nome no cartão" aria-label="Nome no cartão" />
+            </div>
+            <button class="primary-btn full-width" id="finalizePayment">Finalizar pagamento</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">V</span>
+            <span>VANTA</span>
+          </div>
+          <p>Calçados premium para homens que valorizam conforto e estilo.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#catalogo">Coleções</a>
+          <a href="#beneficios">Benefícios</a>
+          <a href="#avaliacoes">Avaliações</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
